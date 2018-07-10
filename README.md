@@ -1,2 +1,9 @@
-# Demo-Project
-Introduction to Project management
+# Java-Project
+
+자바 코드를 submit한 후 
+프로그램을 실행하기 위해 필요한 정보들을 작성한다. 
+
+1. 폴더 구성
+2. 클래스 설명
+3. 프로그램 실행 방법
+4. 프로그램 실행 예시 및 결과
