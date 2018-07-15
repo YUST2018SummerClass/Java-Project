@@ -49,11 +49,9 @@ public class ReadFileByBuffer {
 			fileReader.close();
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			System.out.print("Open file Error!!!" + e);
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			System.out.print("Read file Error!!!" + e);
 			e.printStackTrace();
 		}
