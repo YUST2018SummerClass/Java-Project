@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class OrderReaderByBuffer {
+public class ReadFileByBuffer {
 	public static void main(String[] args) throws Exception {
 		
 		// get the path for "src" folder in the Eclipse project
