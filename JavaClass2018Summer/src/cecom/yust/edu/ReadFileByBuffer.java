@@ -59,7 +59,6 @@ public class ReadFileByBuffer {
 			e.printStackTrace();
 		}
 		
-		
 		// show the data collected from file
 		for(Order order: orderList) {
 //			System.out.println(order.getTableNumber());
