@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ReadFileByBuffer {
 	public static void main(String[] args) throws Exception {
 		
