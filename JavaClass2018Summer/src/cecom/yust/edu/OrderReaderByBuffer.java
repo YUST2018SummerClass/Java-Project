@@ -66,6 +66,7 @@ public class OrderReaderByBuffer {
 //			System.out.println(order.getOrderedMenu());
 //			System.out.println(order.getMenuPrice());
 //			System.out.println(order.getOrderedNumber());
+			
 			System.out.println(order.toString());
 		}
 	}
