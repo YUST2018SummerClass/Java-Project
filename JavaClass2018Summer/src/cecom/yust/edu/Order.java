@@ -47,6 +47,6 @@ public class Order {
 //	public void printOrder() {
 //		System.out.printf("Table: %d\t Menu: %s\t Number: %d\t Price:%d\t Pay:%d\n", tableNumber, orderedMenu, orderedNumber, menuPrice,
 //				menuPrice*orderedNumber);
-//	}
+//	} 
 
 }
