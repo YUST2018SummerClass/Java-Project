@@ -38,9 +38,15 @@ public class Order {
 		this.orderedNumber = orderedNumber;
 	}
 
-	public void printOrder() {
-		System.out.printf("Table: %d\t Menu: %s\t Number: %d\t Price:%d\t Pay:%d\n", tableNumber, orderedMenu, orderedNumber, menuPrice,
-				menuPrice*orderedNumber);
+	@Override
+	public String toString() {
+		return "Order [tableNumber=" + tableNumber + ", orderedMenu=" + orderedMenu + ", menuPrice=" + menuPrice
+				+ ", orderedNumber=" + orderedNumber + ", totalPrice=" + menuPrice*orderedNumber + "]";
 	}
+
+//	public void printOrder() {
+//		System.out.printf("Table: %d\t Menu: %s\t Number: %d\t Price:%d\t Pay:%d\n", tableNumber, orderedMenu, orderedNumber, menuPrice,
+//				menuPrice*orderedNumber);
+//	}
 
 }
