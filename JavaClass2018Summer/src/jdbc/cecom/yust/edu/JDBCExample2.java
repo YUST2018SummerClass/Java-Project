@@ -8,9 +8,9 @@ class JDBCExample2 {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
-            		"jdbc:mysql://114.70.21.41:3306/JavaClass", "root", "cir@817");
+            		"jdbc:mysql://localhost:3306/JavaClass", "root", "cir@817");
             stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("select tableNumber, orderedMenu, price, orderedNumber from `order` ");
+            ResultSet rs = stmt.executeQuery("select tableNumber, orderedMenu, price, orderedNumber from orderMenu ");
             System.out.println("테이블번호 메뉴 \t\t 가격 개수");
             System.out.println(
                 "----------------------------------------------");

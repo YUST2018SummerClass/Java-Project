@@ -5,7 +5,7 @@ class JDBCExample4 {
     public static void main(String args[]) {
         if (args.length != 4) {
             System.out.println(
-                "Usage: java JDBCExample4 상품코드 상품명 가격 제조사");
+                "Usage: java JDBCExample4 Table# Menu Price Order#");
             return;
         }
         Connection conn = null;
@@ -13,10 +13,10 @@ class JDBCExample4 {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
-            		"jdbc:mysql://114.70.21.41:3306/JavaClass", "root", "cir@817");
+            		"jdbc:mysql://localhost:3306/JavaClass", "root", "");
             stmt = conn.createStatement();
             int rowNum = stmt.executeUpdate(
-                "insert into `order` (tableNumber, orderedMenu, price, orderedNumber) values('" +
+                "insert into orderMenu (tableNumber, orderedMenu, price, orderedNumber) values('" +
                     toLatin1(args[0]) + "', '" + 
                     toLatin1(args[1]) + "', " + 
                     toLatin1(args[2]) + ", '" +  

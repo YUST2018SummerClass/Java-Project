@@ -7,7 +7,7 @@ class JDBCExample1 {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
-            		"jdbc:mysql://114.70.21.41:3306/JavaClass", "root", "cir@817");
+            		"jdbc:mysql://:3306/JavaClass", "root", "");
             System.out.println("데이터베이스에 접속했습니다.");
             conn.close();
         }

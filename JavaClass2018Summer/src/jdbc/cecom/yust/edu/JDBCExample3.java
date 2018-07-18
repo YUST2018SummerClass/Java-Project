@@ -4,7 +4,7 @@ import java.sql.*;
 class JDBCExample3 {
     public static void main(String args[]) {
         if (args.length != 1) {
-            System.out.println("Usage: java JDBCExample3 상품명");
+            System.out.println("Usage: java JDBCExample3 Menu");
             return;
         }
         Connection conn = null;
@@ -12,10 +12,10 @@ class JDBCExample3 {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
-            		"jdbc:mysql://114.70.21.41:3306/JavaClass", "root", "cir@817");
+            		"jdbc:mysql://localhost:3306/JavaClass", "root", "");
             stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(
-            		"select tableNumber, orderedMenu, price, orderedNumber from `order` where tableNumber =" +
+            		"select tableNumber, orderedMenu, price, orderedNumber from orderMenu where tableNumber =" +
                 Integer.parseInt(args[0]) );
             System.out.println("테이블번호 메뉴 \t\t 가격 개수");
             System.out.println(
